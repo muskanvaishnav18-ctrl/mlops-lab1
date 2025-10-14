@@ -3,7 +3,7 @@ name: CI-CD for Iris model
 on:
   push:
     branches:
-      - main
+      - main 
 
 jobs:
   build-and-train:
@@ -20,9 +20,9 @@ jobs:
         - name : Install dependencies
           run: |
             python -m pip install --upgrade pip
-            pip  install -r requirements.txt
+            pip install -r requirements.txt
 
-        - name: Train model-
+        - name: Train model
           run: python example1_train.py
 
 
