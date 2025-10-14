@@ -2,8 +2,8 @@ name: CI-CD for Iris model
 
 on:
   push:
-  branches:
-    - main
+    branches:
+      - main
 
 jobs:
   build-and-train:
