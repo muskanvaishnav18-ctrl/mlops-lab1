@@ -3,11 +3,11 @@ name: CI-CD for Iris model
 on:
   push:
   branches:
-  - main
+    - main
 
 jobs:
   build-and-train:
-  runs-on: ubuntu-latets
+  runs-on: ubuntu-latest
   steps:
     - name: checkout code 
       uses: actions/checkout@v4
