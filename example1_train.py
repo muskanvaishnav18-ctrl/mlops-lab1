@@ -42,8 +42,7 @@ with mlflow.start_run():
 
     model = LogisticRegression(max_iter=200)
 
-    model.fit(x_train, y_train)
- 
+    model.fit(x_train, y_train) 
     preds =  model.predict(x_test)
 
     acc = accuracy_score(y_test, preds)
